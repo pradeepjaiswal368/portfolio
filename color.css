@@ -4,6 +4,7 @@ body{
 /*body header*/
 #body-header{
         height: 65vh;
+        width: 102%;
         background-image : url(https://tse3.explicit.bing.net/th?id=OIP.zt_Tvjvfamifhq7v0CmuygHaEK&pid=Api&P=0&w=305&h=172);
         background-attachment: fixed;
         background-size: cover;
@@ -29,7 +30,7 @@ body{
 .nav li a{
         font-family: sans-serif;
         font-weight: 700;
-        margin-left: 5rem;
+        margin-left: 1rem;
         color: white;
         text-decoration: none;
         transition: color 0.5s, border-bottom 4s;
@@ -235,6 +236,8 @@ body{
 }
 
 @media screen and (max-width: 600px){
+
+
         .divider{
                 left: 5%;
                 
@@ -246,122 +249,115 @@ body{
         }
 }
 
-#portfolio{
-        width: 100%;
-        height: 80vh;
-       
-        margin: auto;
+.portfolio{
+  
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 40px;
+        
 }
 
 .portfolio-header{
         margin-bottom: 40px;
 }
+
 .portfolio-header span{    
         font-size: 1.8rem; 
-       /* padding: ; */
-       padding-left: 10px;
-       
-        
+        padding-left: 10px;
 }
 
 .portfolio-container{
-
-        display: flex;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap:20px
+        /* display: flex;
          flex-wrap: wrap; 
         flex-direction: row;
         justify-content: center;
         align-items: center; 
-        justify-content: space-evenly;  
        
-        overflow: hidden;
-
-}
-
-.portfolio-container div{
-        width: 300px;
-        height: 200px;
-        border: 2px solid black;
+        justify-content : space-around;  
         
+        box-sizing: border-box;
+        border: 2px solid rgb(235, 22, 22);
+       
+         */
 }
 
-.portfolio-container :hover{
-        box-shadow: 0px 0px 6px 4px rgb(66, 63, 63);
+.box{
+        width: 250px;
+        height: 350px;
+        background-color: grey;
+        border-radius: 25px;
+        box-shadow: 0px 0px 10px 4px rgb(7, 7, 7);
+        justify-content: space-around;
 }
 
 
-@media screen and (max-width: 600px){
-       .portfolio-container{
-               flex-direction: column;
-       }
+
+@media screen and (max-width: 1000px){
+        .portfolio-container{
+                grid-template-columns: 1fr 1fr;
+        }
+
 }
 
 
 .Box1 {
-
-        background-image: url(../Project1/images/bg.jpg);
-        background-size: cover;
-        height: auto;
-        width: auto;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
         
 }
 
-.Box3 {
+.Box1 h1, p{
 
-        background-image: url(../img/software-engineer.jpg);
-        background-size: cover;
-        height: auto;
-        width: auto;
-        
+        font-family: sans-serifs;
+        font-weight: 700;
+        color: white;
+        margin-top: 50px;
 }
 
-.Box4 {
 
-        background-image: url(../img/software-engineer.jpg);
-        background-size: cover;
-        height: auto;
-        width: auto;
-        
-}
 
-.portfolio-container a {       
-        color: rgb(8, 8, 8);
+.Box1 button{
+       
+        color: rgb(255, 255, 255);
+        padding: .5rem;
+        padding: 15px;
+        font-size: .8rem;
         text-decoration: none;
+        border: none;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        border-radius: 10px;
+        margin-top: 60px;
+
+
+
 }
 
-.Box1 p{
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-left: 30%;
-        margin-top: 30%;
-}
 
-.Box3 p{
-        
-        margin-left: 30%;
-        margin-top: 30%;
-}
-
-.Box4 p{
-        
-        margin-left: 30%;
-        margin-top: 30%;
-}
-
-@media screen and (max-width: 300px){
+@media screen and (max-width: 600px){
         .portfolio-container{
-               height: 300px;
-               flex-wrap: wrap;
+                grid-template-columns: 1fr;
         }
+        .portfolio-container div{
+                width: 400px;
+              
+         } 
  }
  
 
 
 
 #Contact{
-        position: absolute;
-     width: 100vw;
-     height: 100vh;
+     
      background-color: black;
+     width: 100vw;
+     
 }
 
 
@@ -381,7 +377,7 @@ body{
         color: blanchedalmond;
 }
 
-
+/* 
 
 #form{
         margin-left: 15%;
@@ -413,14 +409,11 @@ body{
      font-size: 0.95rem; 
      padding: 4px 20px 4px 10px;
      letter-spacing: 1px;
-}
+} */
 
 #Getintouch {
-        display: inline-block;
+        margin-left: 50px ;
         max-width: 35%;
-        vertical-align: top;
-        margin-left: 30%;
-      
         color: white;
         font-size: 0.9rem;
 
@@ -445,4 +438,10 @@ body{
 
 .footer{
         margin-top: 80px;
+}
+
+
+.contact{
+        background-color: black;
+        
 }
