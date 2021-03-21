@@ -27,3 +27,5 @@ for(var i = 1; i < anchorTags.length; i++){
 
 var scrollbar = document.querySelectorAll('.skill-progress');
 
+
+
