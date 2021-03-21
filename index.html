@@ -15,12 +15,14 @@
 <body>
     <header id="body-header">
         <nav>
-            <ul class="nav text-center">
-                <li> <a href="#">Home</a></li>
-                <li><a href="#About">About</a></li>
+            <ul class="nav navbar text-center">
+                <li > <a href="#">Home</a></li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
                 <!-- <li><a href="#Experience">Experience</a></li> -->
                <!-- <li><a href="#Education">Education</a></li>  -->
-                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#Contact">Contact</a></li>
 
             </ul>
@@ -32,8 +34,8 @@
 
         </div>
 
-        <div>
-            <ul class="nav text-center social-icons">
+        <div class="text-center">
+            <ul class="nav social-icons">
 
                 <li>
                     <a href="https://www.linkedin.com/in/pradeep-jaiswal-461832190/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BCwNWn7TmSP2UP9JT0GCMCQ%3D%3D" target="_blank">
@@ -49,9 +51,9 @@
                     <a href="https://www.facebook.com/pradeep.jaiswar.397" target="_blank"><i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
-                <li>
+                <!-- <li>
                     <a href="#google"><i class="fab fa-google"></i></a>
-                </li>
+                </li> -->
                 <li>
                     <a href="#Qu"><i class="fab fa-quora"></i></a>
                 </li>
@@ -65,7 +67,7 @@
     <main>
         <section id="about">
             <div id="my-image" class="text-center">
-                <a><img src="../img/pradeepj.jpg"></a>
+                <a><img src="pradeepj.jpg"></a>
             </div>
 
             <div>
@@ -97,7 +99,7 @@
                 <span>
                     <i class="fas fa-file-contract"></i>
                 </span>
-                <span>SKILLS</span>
+                <span>Technology</span>
             </h2>
 
 
@@ -116,21 +118,21 @@
 
 
                 <div class="skill-progress">
-                    <div class="percentage  mb-black">
+                    <div class="percentage2  mb-black">
                         <div class="name1"><span>HTML</span></div>
                     </div>
                 </div>
 
 
                 <div class="skill-progress">
-                    <div class="percentage  mb-black">
+                    <div class="percentage2  mb-black">
                         <div class="name1"><span>CSS</span></div>
                     </div>
                 </div>
 
                 <div class="skill-progress">
                     <div class="percentage  mb-black">
-                        <div class="name1"><span></span></div>
+                        <div class="name1"><span>JavaScript</span></div>
                     </div>
                 </div>
 
@@ -203,36 +205,37 @@
         </section>
 
 
-        <section>
+        <section id="projects">
             <h1 class="portfolio-header text-center">
                 <span><i class="fab fa-artstation"></i></span>
                 <span>Projects</span>
             </h1>
         </section>
-        
-        <section class="portfolio">
+
+        <section id="portfolio">
 
             <div class="portfolio-container">
 
- 
-                    <div class="Box1 box">
-                        <h1>HomeMade Restaurant</h1>
 
-                        <p>
-                            This is just a static landing page of how restro looks like.
-                        </p>
+                <div class="Box1 box">
+                    <h1>HomeMade Restaurant</h1>
 
-                        
-                        <span>TECH STACK : <span>HTML CSS<span></span>
- 
-                              
-                        <div>
-                        <a href="https://github.com/pradeepjaiswal368/homerestaurant" target="_blank"><button>View Project</button></a> 
-                            <button>Live Project</button>
-                        </div>
+                    <p>
+                        This is just a static landing page of how restro looks like.
+                    </p>
 
-                    </div>
-                
+
+                    <span>TECH STACK : <span>HTML CSS<span></span>
+
+
+                            <div>
+                                <a href="https://github.com/pradeepjaiswal368/homerestaurant"
+                                    target="_blank"><button>View Project</button></a>
+                                <button>Live Project</button>
+                            </div>
+
+                </div>
+
 
 
                 <div class="Box1 box">
@@ -247,13 +250,13 @@
                     <h1></h1>
                 </div>
 
-             
+
 
             </div>
 
         </section>
 
-     <section id="Contact"> 
+        <section id="contact">
             <h1 class=" contact-header text-center">
                 <span>
                     <i class="fas fa-id-card"></i>
@@ -263,8 +266,12 @@
                 </span>
             </h1>
 
-            <div> 
-               
+            <div class="contacts">
+
+                <div>
+                    <img src="download.jpg" alt="" height="300px" width="300px">
+                </div>
+
                 <!-- <form id="form">
                     <div>
                         <label for="username"></label>
@@ -286,13 +293,11 @@
                         <button type="submit"> SEND MESSAGE </button>
                     </div>
                 </form>  -->
-                
-                <div id="Getintouch"> 
-                    <img src="download.jpg" alt="">
 
+                <div id="Getintouch">
                     <h2>Get in touch</h2>
                     <p>You can contact me from below information</p>
-                    
+
                     <div>
                         <h2>My Address</h2>
                         <div id="myinfo"><span><i class="fas fa-map-marker-alt"></i></span>
@@ -300,18 +305,19 @@
                         </div>
                         <div id="myinfo"><span><i class="fas fa-mobile-alt"></i></span><span>100</span></div>
                         <div id="myinfo"><span><i
-                            class="far fa-envelope"></i></span><span>jaiswalpradeep368@gmail.com</span></div>
-                        </div>
-                    </div> 
-                </div> 
+                                    class="far fa-envelope"></i></span><span>jaiswalpradeep368@gmail.com</span></div>
+                    </div>
+                </div>
+            </div>
+            
 
-                
 
-          <div class="footer">
+            <div class="footer">
                 <ul class="nav text-center social-icons">
 
                     <li>
-                        <a href="https://www.linkedin.com/in/pradeep-jaiswal-461832190/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BCwNWn7TmSP2UP9JT0GCMCQ%3D%3D" target="_blank">
+                        <a href="https://www.linkedin.com/in/pradeep-jaiswal-461832190/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BCwNWn7TmSP2UP9JT0GCMCQ%3D%3D"
+                            target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                     </li>
@@ -321,7 +327,7 @@
                         </A>
                     </li>
                     <li>
-                        <a href="#fb"><i class="fab fa-facebook-f"></i>
+                        <a href="https://www.facebook.com/pradeep.jaiswar.397"><i class="fab fa-facebook-f"></i>
                         </a>
                     </li>
                     <li>
@@ -333,14 +339,14 @@
 
                 </ul>
 
-            </div> 
+            </div>
 
-        </section> 
-
-
-      
-
+        </section>
     </main>
+
+ <!-- <script src="script.js"></script> -->
+
+
 
 </body>
 
